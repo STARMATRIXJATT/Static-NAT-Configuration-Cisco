@@ -1,0 +1,23 @@
+enable
+configure terminal
+
+! Configure WAN link interface
+interface GigabitEthernet0/0
+ ip address 200.0.0.2 255.255.255.0
+ no shutdown
+exit
+
+! Configure loopback interfaces
+interface Loopback0
+ ip address 10.0.0.1 255.255.255.0
+exit
+
+interface Loopback1
+ ip address 11.0.0.1 255.255.255.0
+exit
+
+! Route back to NAT public IPs block
+ip route 200.0.0.0 255.255.255.0 200.0.0.1
+
+exit
+write memory
