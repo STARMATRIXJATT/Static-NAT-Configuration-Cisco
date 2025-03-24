@@ -68,7 +68,7 @@ This project demonstrates the implementation of **Static NAT (Network Address Tr
 
 ## 🧑‍💻 Author
 
-- **Your Name** | Cisco Networking Enthusiast
+- **Jatin Choudhary** | Cisco Networking Enthusiast
 
 ---
 
